@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reset and base layout */
+html, body, #root {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Apply Noto Sans everywhere, set default text styles */
+body {
+  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #222;
+  min-height: 100vh;
+  line-height: 1.5;
+  background: #fff;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply border-box, zero margins/padding globally */
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove app-level focus outlines (customize for accessibility if needed) */
+:focus {
+  outline: none;
+}
+
+/* Ensure root container is edge-to-edge, full height */
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Remove scrollbar gap in some browsers */
+html {
+  overflow-y: scroll;
+}
+
+/* --- DISABLE WINDOW SCROLLBAR --- */
+html, body {
+  overflow: hidden !important;        /* fully disables window scrollbar */
+  scrollbar-width: none;              /* Firefox */
+  -ms-overflow-style: none;           /* IE/Edge */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;                      /* Chrome/Safari/Opera */
+}
